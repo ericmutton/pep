@@ -1,4 +1,5 @@
 # pep
+Professional Education (Engineering) Platform
 
 This template should help get you started developing with Vue 3 in Vite.
 
