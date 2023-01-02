@@ -1,0 +1,14 @@
+name: pep
+version: 0.1.0
+
+targets:
+  pep:
+    main: src/pep.cr
+
+dependencies:
+  kemal:
+    github: kemalcr/kemal
+
+crystal: 1.6.2
+
+license: MIT

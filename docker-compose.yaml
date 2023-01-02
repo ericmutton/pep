@@ -1,0 +1,16 @@
+services:
+  backend:
+    build: backend
+    networks:
+      - pep
+    ports:
+      - "3000:3000"
+    volumes:
+      - pep-db:/data/db:Z
+
+volumes:
+  pep-db:
+    external: true
+
+networks:
+  pep:
