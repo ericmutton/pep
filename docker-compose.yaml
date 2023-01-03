@@ -7,6 +7,12 @@ services:
       - "3000:3000"
     volumes:
       - pep-db:/data/db:Z
+  frontend:
+    build: frontend
+    networks:
+      - pep
+    ports:
+      - "8080:8080"
 
 volumes:
   pep-db:
