@@ -1,0 +1,4 @@
+# NOT
+# AND/NAND
+# OR/NOR
+# XOR

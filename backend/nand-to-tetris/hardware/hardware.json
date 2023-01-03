@@ -1,0 +1,4 @@
+{
+    "title":"Hardware",
+    "order":["logic-gates","arithmetics","switching","conditions","arithmetic-logic-unit","memory","processor"]
+}
