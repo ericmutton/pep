@@ -1,33 +1,20 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import IconBookEducation from './components/icons/IconBookEducation.vue';
+import IconBookEducation from './components/icons/IconBookEducation.vue'
 </script>
 
 <script lang="ts">
+//Load library shelf information
 export default {
-    data() {
-        return {
-            shelves: [
-                { name: "Computer Science", collections: [
-                        { name: "Nand-to-Tetris", id: "nand-to-tetris"
-                        }
-                    ] },
-                { name: "Cybersecurity", collections: [
-                        { name: "Linux", id: "linux"
-                        }
-                    ] }
-            ]
-        };
-    },
-    components: { IconBookEducation }
+  	components: { IconBookEducation }
 }
 </script>
 
 <template>
   <main id="layout-container">
         <header>
-            <RouterLink to="/discover">
-				Discover
+            <RouterLink to="/discovery">
+				Discovery
 			</RouterLink>
             <RouterLink to="/library">
 				<IconBookEducation />
