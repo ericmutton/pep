@@ -6,8 +6,12 @@ const props = defineProps<{
 </script>
 
 <template>
-    <strong><slot name="name"></slot></strong>
-    <Collection v-for="collection in collections" :id=collection.id :pages=collection.orders>
-        <template #name>{{ collection.name }}</template>
+  <strong>
+    <slot name="name"></slot>
+  </strong>
+  <div v-for="collection in collections">
+    <Collection v-if="collection.id != ''" :id=collection.id>
+      <template #name>{{ collection.name }}</template>
     </Collection>
+  </div>
 </template>
