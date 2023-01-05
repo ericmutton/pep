@@ -3,12 +3,6 @@ import { md } from '@/main';
 const props = defineProps<{
   render: any
 }>()
-//Temporary filesystem usage
-const mdfiles = import.meta.glob('@/nand-to-tetris/*/*.md');
-const jsonfiles = import.meta.glob('@/nand-to-tetris/*/*.json');
-console.log(mdfiles,jsonfiles);
-
-console.log(Object.getPrototypeOf(props.render));
 
 </script>
 
