@@ -1,0 +1,18 @@
+{
+    "shelves": [
+        {
+            "name": "Computer Science",
+            "collections": [
+                {
+                    "name": "Nand-to-Tetris",
+                    "id": "nand-to-tetris"
+                }
+            ]
+        },
+        {
+            "name": "Cybersecurity",
+            "collections": [
+            ]
+        }
+    ]
+}
