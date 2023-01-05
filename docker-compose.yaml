@@ -4,7 +4,7 @@ services:
     networks:
       - pep
     ports:
-      - "3000:3000"
+      - "3000:3000" # Kemal Default
     volumes:
       - pep-db:/data/db:Z
   frontend:
@@ -12,7 +12,7 @@ services:
     networks:
       - pep
     ports:
-      - "8080:8080"
+      - "5173:5173" # Vite Default
 
 volumes:
   pep-db:
