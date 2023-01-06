@@ -16,7 +16,7 @@ export default defineConfig({
       port: 5173,
       proxy: {
           '/V1': {
-              target: 'http://localhost:3000',
+              target: 'http://backend:3000',
               changeOrigin: true,
               secure: false,
               rewrite: (path) => path.replace(/^\/V1/, '')

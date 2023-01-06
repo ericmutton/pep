@@ -19,6 +19,14 @@ services:
     environment:
       - POSTGRES_USER=${DATABASE_USER:-pep}
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD:-admin}
+  frontend:
+    build: frontend
+    networks:
+      - pep
+    ports:
+      - "5173:5173"
+    depends_on:
+      - backend
 volumes:
   pep-db:
     external: true
