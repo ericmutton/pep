@@ -1,0 +1,11 @@
+{
+    "title": "Nand-to-Tetris",
+    "id": "nand-to-tetris",
+    "author": "64441308+ericmutton@users.noreply.github.com",
+    "rating": "Intermediate",
+    "tags": ["Computer Science","Hardware","Software","Machine Code"],
+    "chapters": {
+        "hardware": ["logic-gates","arithmetics","switching","conditions","arithmetic-logic-unit","memory","processor"],
+        "software": ["low-level"]
+    }
+}
