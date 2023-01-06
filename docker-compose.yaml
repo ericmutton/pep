@@ -7,10 +7,20 @@ services:
       - "3000:3000"
     volumes:
       - pep-db:/data/db:Z
-
+    depends_on:
+      - database
+  database:
+    image: docker.io/library/postgres:12.13-alpine
+    networks:
+      - pep
+    volumes:
+      - database-storage:/var/lib/postgresql/data
+    environment:
+      - POSTGRES_USER=${DATABASE_USER:-pep}
+      - POSTGRES_PASSWORD=${DATABASE_PASSWORD:-admin}
 volumes:
   pep-db:
     external: true
-
+  database-storage:
 networks:
   pep:
