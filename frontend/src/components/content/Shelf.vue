@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Collection from './Collection.vue'
+import Collection from '@/components/content/Collection.vue'
 const props = defineProps<{
   collections: any
 }>()

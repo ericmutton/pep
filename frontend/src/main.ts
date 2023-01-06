@@ -1,10 +1,10 @@
 import { createApp } from 'vue'
-import App from './App.vue'
-import router from './router'
+import App from '@/App.vue'
+import router from '@/router'
 import axios from 'axios'
 import MarkdownIt from 'markdown-it'
 
-import './assets/main.css'
+import '@/assets/main.css'
 
 // Markdown renderer Vue Composable
 var markdown = new MarkdownIt();
