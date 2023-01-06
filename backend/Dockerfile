@@ -5,5 +5,5 @@ WORKDIR /opt/backend
 #ENV KEMAL_ENV=production
 RUN crystal init app pep . --skip-existing \
     && shards install
-CMD crystal run src/pep.cr
+CMD ["crystal", "run", "src/pep.cr"]
 EXPOSE 3000
