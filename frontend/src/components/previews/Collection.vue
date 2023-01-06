@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Writeup from '@/components/content/Writeup.vue'
+import Writeup from './Writeup.vue'
 import axios from 'axios'
 const props = defineProps<{
   id: string
