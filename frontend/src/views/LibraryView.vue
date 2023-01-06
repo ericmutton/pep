@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Library from '../components/content/Library.vue'
+import Library from '@/components/previews/Library.vue'
 </script>
 
 <template>

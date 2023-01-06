@@ -1,6 +1,6 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import IconBookEducation from './components/icons/IconBookEducation.vue'
+import IconBookEducation from '@/components/icons/IconBookEducation.vue'
 </script>
 
 <script lang="ts">
