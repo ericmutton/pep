@@ -1,13 +1,9 @@
 <script setup lang="ts">
 import { RouterLink, RouterView } from 'vue-router'
-import IconBookEducation from '@/components/icons/IconBookEducation.vue'
 </script>
 
 <script lang="ts">
-//Load library shelf information
-export default {
-  	components: { IconBookEducation }
-}
+
 </script>
 
 <template>
@@ -17,11 +13,9 @@ export default {
 				Discovery
 			</RouterLink>
             <RouterLink to="/library">
-				<IconBookEducation />
 			</RouterLink>
             <RouterLink to="/settings">Settings</RouterLink>
 		</header>
-        <div id="sidebar"></div>
         <div id="content">
             <RouterView />
         </div>
@@ -63,7 +57,7 @@ header .title {
 	grid-template-columns: 210px 1fr;
 	grid-template-areas:
 		"topbar topbar topbar"
-		"sidebar content content";
+		"content content content";
 }
 
 #sidebar {
