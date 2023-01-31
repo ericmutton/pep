@@ -1,7 +1,7 @@
 import { defineConfig } from 'vitepress'
 import markdownItKatex from 'markdown-it-katex'
 // TODO: Correctly integrate karnaugh-map LaTeX package.
-import karnaughMap from './karnaugh-map/KarnaughMap'
+// import karnaughMap from './karnaugh-map/KarnaughMap'
 
 // TODO: Axios binding to Kemal, this should not be generated here. 
 const chapters = [
@@ -211,7 +211,7 @@ export default defineConfig({
     },
     markdown: {
         config: (md) => {
-          md.use(markdownItKatex, karnaughMap)
+          md.use(markdownItKatex/*, karnaughMap*/)
         }
       },
       vue: {
