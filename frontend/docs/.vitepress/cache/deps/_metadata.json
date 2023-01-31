@@ -1,0 +1,32 @@
+{
+  "hash": "914ea477",
+  "browserHash": "65c91e4d",
+  "optimized": {
+    "vue": {
+      "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "file": "vue.js",
+      "fileHash": "ae625196",
+      "needsInterop": false
+    },
+    "vue-codemirror": {
+      "src": "../../../../node_modules/.pnpm/vue-codemirror@6.1.1_vhikcdkubtgbuxk47tdob2ofvi/node_modules/vue-codemirror/dist/vue-codemirror.esm.js",
+      "file": "vue-codemirror.js",
+      "fileHash": "d0c60e30",
+      "needsInterop": false
+    },
+    "@codemirror/theme-one-dark": {
+      "src": "../../../../node_modules/.pnpm/@codemirror+theme-one-dark@6.1.0/node_modules/@codemirror/theme-one-dark/dist/index.js",
+      "file": "@codemirror_theme-one-dark.js",
+      "fileHash": "7399c538",
+      "needsInterop": false
+    }
+  },
+  "chunks": {
+    "chunk-US7RK326": {
+      "file": "chunk-US7RK326.js"
+    },
+    "chunk-QP6TZ43W": {
+      "file": "chunk-QP6TZ43W.js"
+    }
+  }
+}
