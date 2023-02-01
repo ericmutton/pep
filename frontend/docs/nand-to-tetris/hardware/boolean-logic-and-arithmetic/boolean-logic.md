@@ -5,8 +5,6 @@ head:
   - - link
     - rel: stylesheet
       href: https://cdnjs.cloudflare.com/ajax/libs/KaTeX/0.5.1/katex.min.css
-header-includes:
-   - \usepackage{/docs/.vitepress/karnaugh-map/karnaugh-map.sty}
 ---
 
 # Boolean Logic
@@ -89,7 +87,7 @@ $\prod{(1,2,3)}$
 
 ### Process
 1. For minterms group 1s, for maxterms group 0s.
-
+```
 $$
 \begin{karnaugh-map}[4][4][4][$a$][$b$][$c$][$d$][$e$][$f$]
 \minterms{0,1,2,3,8,13,17,20,22,28,
@@ -103,3 +101,4 @@ $$
 \implicant{13}{15}[0,2]
 \end{karnaugh-map}
 $$
+```
