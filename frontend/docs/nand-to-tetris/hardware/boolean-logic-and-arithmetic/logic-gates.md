@@ -7,7 +7,7 @@ features:
 A logic gate is an electronic version of a **boolean logical operator**. Boolean Logic gates include `NOT`,`AND`,`OR`, and `XOR`, with each gate having an inverted form, or a **complement**: `BUFFER`,`NAND`,`NOR`,`XNOR`. Inverted gate symbols are denoted with a 'bubble' or 'wedge' depending on the representation.
 
 ::: tip `BUFFER` is unique in that rather than transforming the expressed boolean value, it acts like an electrical repeater.
-<Piece type="BUFFER" shape="ANSI"/>
+<Piece shape="ANSI" type="BUFFER" />
 :::
 
 
@@ -36,40 +36,48 @@ NOT is a unary operator. Unary operations involve just one input. The other oper
 
 ### Representation
 The symbol for NOT is an inverted BUFFER. Inverted gates are denoted with a dot behind its output line.
-<Piece type="NOT" shape="ANSI" />
+<Piece shape="ANSI" type="NOT" />
 
 ## AND/NAND
 Arithmetically, `AND` is similar to `*`, `>1`. In Boolean algebra, it is **conjunction**.
 ### Truth Table
-| & | 0 | 1 |
+| AND | 0 | 1 |
 |:-: |:-:|:-:|
 |  0 | 0 | 0 |
 |  1 | 0 | 1 |
 
-| & | 0 | 1 |
+| NAND | 0 | 1 |
 |:-: |:-:|:-:|
 |  0 | 1 | 1 |
 |  1 | 1 | 0 |
 
-<Piece type="AND" shape="ANSI" />
-<Piece type="NAND" shape="ANSI" />
+<Piece shape="ANSI" type="AND" />
+<Piece shape="ANSI" type="NAND" />
 
 ## OR/NOR
 Arithmetically, `OR` is similar to `+`, `≥1`. 
-| OP | 0 | 1 |
+| OR | 0 | 1 |
 |:-: |:-:|:-:|
 |  0 | 0 | 1 |
 |  1 | 1 | 1 |
 
-<Piece type="OR" shape="ANSI" />
-<Piece type="NOR" shape="ANSI" />
+| NOR | 0 | 1 |
+|:-: |:-:|:-:|
+|  0 | 1 | 0 |
+|  1 | 0 | 0 |
+
+<Piece shape="ANSI" type="OR" />
+<Piece shape="ANSI" type="NOR" />
 
 ## Exclusive OR (XOR)
 Arithmetically, `XOR` is similar to `=1`.  
-| OP | 0 | 1 |
+| XOR | 0 | 1 |
 |:-: |:-:|:-:|
 |  0 | 0 | 1 |
 |  1 | 1 | 0 |
+
+<Piece shape="ANSI" type="XOR" />
+<Piece shape="ANSI" type="XNOR" />
 
 ::: info Further Reading
 [Logic Gate Representations (ANSI/IEEE Std 91/91a-1991)](https://www.ti.com/lit/ml/sdyz001a/sdyz001a.pdf)
