@@ -95,7 +95,7 @@ function nav(collection) {
 }
 
 function sidebar(collection) {
-    const sidebar = collection.chapters.map(chapter => ({
+    const chapters = collection.chapters.map(chapter => ({
         text: chapter.name,
         collapsible: true,
         items: chapter.sequences.map(sequence => ({
@@ -106,21 +106,16 @@ function sidebar(collection) {
                 link: `/${collection.id}/${chapter.id}/${sequence.id}/${section.id}` 
             }))
         }))
-    }))
-    return {
-        '/nand-to-tetris/hardware/': [
-            sidebar.at(0)
-        ],
-        '/nand-to-tetris/software/': [
-            sidebar.at(1)
-        ],
-        '/nand-to-tetris/': [
-            {
-                text: collection.name,
-                items: sidebar
-            }
-        ]
-    };
+    }));
+    const sidebar = {};
+    for (let i = 0; i < collection.chapters.length; i++) {
+        sidebar[`${collection.id}/${collection.chapters[i].id}/`] = [chapters[i]];
+    }
+    sidebar[collection.id] = [{
+        text: collection.name,
+        items: chapters
+    }];
+    return sidebar;
 }
 
 // Katex Custom Elements
@@ -210,7 +205,7 @@ const customElements = [
     'semantics',
     'annotation',
     'annotation-xml'
-  ]
+    ]
 
 export default defineConfig({
     title: "Explore",
