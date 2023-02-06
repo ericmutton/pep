@@ -16,7 +16,8 @@
   
   <script lang="ts">
     import { defineComponent, ref, shallowRef } from 'vue'
-    import { Codemirror } from 'vue-codemirror'
+    import pkg from 'vue-codemirror';
+    const { Codemirror } = pkg;
     import { oneDark } from '@codemirror/theme-one-dark'
   
     export default defineComponent({
