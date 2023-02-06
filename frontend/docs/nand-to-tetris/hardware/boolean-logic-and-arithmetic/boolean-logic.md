@@ -67,7 +67,7 @@ For truth tables beyond 2-bit logic, a condensed form can be used. To demonstrat
 [Karnaugh Maps (K-Maps)](https://en.wikipedia.org/wiki/Karnaugh_map) are used to aid in simplifying logic. While similar in appearance to condensed truth tables, a K-Map represents both minimum terms (minterms) and maximum terms (maxterms) in a grouped form. 
 
 
-$\sum{}$
+$\sum{(1,2,3)}$
 
 $\prod{(1,2,3)}$
 
