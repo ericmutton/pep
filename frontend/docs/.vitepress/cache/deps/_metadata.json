@@ -1,32 +1,29 @@
 {
-  "hash": "e79071d6",
-  "browserHash": "6597c82a",
+  "hash": "810dfd92",
+  "browserHash": "790be5bd",
   "optimized": {
     "vue": {
-      "src": "../../../../node_modules/.pnpm/vue@3.2.45/node_modules/vue/dist/vue.runtime.esm-bundler.js",
+      "src": "../../../../node_modules/vue/dist/vue.runtime.esm-bundler.js",
       "file": "vue.js",
-      "fileHash": "125f4712",
+      "fileHash": "8eb93e33",
       "needsInterop": false
     },
     "vue-codemirror": {
       "src": "../../../../node_modules/.pnpm/vue-codemirror@6.1.1_vhikcdkubtgbuxk47tdob2ofvi/node_modules/vue-codemirror/dist/vue-codemirror.esm.js",
       "file": "vue-codemirror.js",
-      "fileHash": "7812e560",
+      "fileHash": "233ccb28",
       "needsInterop": false
     },
     "@codemirror/theme-one-dark": {
-      "src": "../../../../node_modules/.pnpm/@codemirror+theme-one-dark@6.1.0/node_modules/@codemirror/theme-one-dark/dist/index.js",
+      "src": "../../../../node_modules/@codemirror/theme-one-dark/dist/index.js",
       "file": "@codemirror_theme-one-dark.js",
-      "fileHash": "ad9fdab2",
+      "fileHash": "02bb8a4c",
       "needsInterop": false
     }
   },
   "chunks": {
-    "chunk-US7RK326": {
-      "file": "chunk-US7RK326.js"
-    },
-    "chunk-QP6TZ43W": {
-      "file": "chunk-QP6TZ43W.js"
+    "chunk-ZY6CIX2Y": {
+      "file": "chunk-ZY6CIX2Y.js"
     }
   }
 }
