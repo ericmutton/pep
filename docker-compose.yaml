@@ -1,3 +1,5 @@
+# For connection urls to the following instances, see
+# https://github.com/prisma/prisma/blob/main/TESTING.md#environment-variables
 services:
   backend:
     build: backend
@@ -5,7 +7,7 @@ services:
       - pep
       - pep-sql
     ports:
-      - "3000:3000"
+      - "5435:5432"
     volumes:
       - pep-db:/data/db:Z
     depends_on:
@@ -16,7 +18,9 @@ services:
       - pep-sql
     volumes:
       - database-storage:/var/lib/postgresql/data
+    restart: always
     environment:
+      - POSTGRES_DB=
       - POSTGRES_USER=${DATABASE_USER:-pep}
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD:-admin}
   frontend:
