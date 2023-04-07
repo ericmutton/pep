@@ -20,7 +20,7 @@ services:
       - database-storage:/var/lib/postgresql/data
     restart: always
     environment:
-      - POSTGRES_DB=
+#     - POSTGRES_DB=
       - POSTGRES_USER=${DATABASE_USER:-pep}
       - POSTGRES_PASSWORD=${DATABASE_PASSWORD:-admin}
   frontend:
